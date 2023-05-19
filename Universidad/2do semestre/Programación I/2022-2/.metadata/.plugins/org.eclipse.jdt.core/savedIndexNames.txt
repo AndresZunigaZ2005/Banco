@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\Users\ANDRE\Desktop\Universidad\2do semestre\Programación I\2022-2\.metadata\.plugins\org.eclipse.jdt.core
+2624680875.index
+1865797976.index
+2482155115.index
+1235002472.index
+2128575829.index
+1323144508.index
+3524524362.index
+1231416145.index
+355676924.index
+1204385438.index
+3624101761.index

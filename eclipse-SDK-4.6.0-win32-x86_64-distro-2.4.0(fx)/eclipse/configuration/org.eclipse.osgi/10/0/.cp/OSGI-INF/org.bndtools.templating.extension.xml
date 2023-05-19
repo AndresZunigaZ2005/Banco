@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.bndtools.templating.extension" activate="activate">
+  <implementation class="org.bndtools.core.templating.extreg.ExtensionRegistryTemplateLoader"/>
+  <service>
+    <provide interface="org.bndtools.templating.TemplateLoader"/>
+  </service>
+  <property name="service.description" type="String" value="Load templates from the Eclipse Extension Registry"/>
+  <property name="source" type="String" value="extension"/>
+</scr:component>

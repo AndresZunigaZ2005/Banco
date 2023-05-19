@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.LayoutManager"><rhs name\="java.awt.GridLayout"/></lhs><lhs name\="javax.swing.JFrame"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="javax.swing.WindowConstants"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="javax.accessibility.Accessible"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="javax.swing.RootPaneContainer"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="javax.swing.TransferHandler$HasGetTransferHandler"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.Frame"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.MenuContainer"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.Window"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.Container"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.Component"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="java.awt.image.ImageObserver"><rhs name\="ventanaConfiteria"/><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs><lhs name\="ventanaConfiteria"><rhs name\="ventanaConfiteria"/></lhs><lhs name\="EjerciciosClase.RegistroEtudiantes"><rhs name\="EjerciciosClase.RegistroEtudiantes"/></lhs></history>
+content_assist_number_of_computers=14
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

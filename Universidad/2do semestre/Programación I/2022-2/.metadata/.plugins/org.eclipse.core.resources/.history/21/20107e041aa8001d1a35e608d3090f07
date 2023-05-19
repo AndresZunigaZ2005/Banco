@@ -1,0 +1,28 @@
+package EjerciciosClase;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class RegistroEtudiantes extends JFrame {
+
+	private JPanel showPaneRegister;
+	
+	public static void main(String[]args) {
+		
+	}
+
+	public RegistroEstudiantes() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		showPaneRegister = new JPanel();
+		showPaneRegister.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(showPaneRegister);
+		setResizable(false);
+		setLayout(null);
+	}
+
+}

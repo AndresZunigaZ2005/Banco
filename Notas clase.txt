@@ -1,0 +1,14 @@
+CLASE 29/03/23
+Contrato, publico, servicio, interaccion, comunicación
+El cliente no necesita saber como se hacen los procesos, solo necesitan resultados
+
+Token agenda
+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
+
+Registro de vehiculos, para venta o alquiler 
+Registro de clientes
+Registro de transacciones(Clase), atributos: Un cliente, Venta alquiler o compra.
+registro empleados
+base de datos: empleados, clientes, concecionario, vehiculo
+poner stock
+yo soy cliente del proveedor, cliente conectado con la transaccion 

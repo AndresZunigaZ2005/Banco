@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.2.0" name="org.bndtools.templating.repos" activate="activate">
+  <implementation class="org.bndtools.core.templating.repobased.ReposTemplateLoader"/>
+  <service>
+    <provide interface="org.bndtools.templating.TemplateLoader"/>
+  </service>
+  <reference name="ExecutorService" cardinality="0..1" interface="java.util.concurrent.ExecutorService" bind="setExecutorService" policy-option="greedy"/>
+  <reference name="TemplateEngine" cardinality="0..n" policy="dynamic" interface="org.bndtools.templating.TemplateEngine" bind="addTemplateEngine" unbind="removeTemplateEngine"/>
+  <property name="service.description" type="String" value="Load templates from the Workspace and Repositories"/>
+  <property name="source" type="String" value="workspace"/>
+  <property name="service.ranking" type="String" value="2147483647"/>
+</scr:component>

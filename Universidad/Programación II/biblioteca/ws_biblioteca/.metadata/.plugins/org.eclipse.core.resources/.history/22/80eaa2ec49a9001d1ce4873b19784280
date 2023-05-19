@@ -1,0 +1,28 @@
+package co.edu.uniquindio.biblioteca.model;
+
+import java.util.ArrayList;
+
+public class Biblioteca {
+
+	
+	//ATRIBUTOS
+	private String nombre;
+	private String direccion;
+	private String telefono;
+	private ArrayList<Estudiante> listaEstudiantes;
+	
+	public Biblioteca() {
+	
+	}
+
+	public Biblioteca(String nombre, String direccion, String telefono) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.telefono = telefono;
+	}
+
+	
+	
+	
+	
+}

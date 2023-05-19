@@ -1,0 +1,48 @@
+package co.edu.uniquindio.bank.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Banco {
+
+	private String nombre;
+	private List<Cuenta> listaCuentas = new ArrayList<Cuenta>();
+	public Banco() {
+		// TODO Auto-generated constructor stub
+	}
+	public Banco(String nombre, List<Cuenta>listaCuentas) {
+		super();
+		this.nombre = nombre;
+		this.listaCuentas = listaCuentas;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public List<Cuenta> getListaCuentas() {
+		return listaCuentas;
+	}
+	public void setListaCuentas(List<Cuenta> listaCuentas) {
+		this.listaCuentas = listaCuentas;
+	}
+	@Override
+	public String toString() {
+		return "Banco [nombre=" + nombre + ", listaCuentas=" + listaCuentas + "]";
+	}
+
+	//---------------------------------------------------------------------------------------//
+	/**
+	 * CRUD Cuenta ahorrros
+	 */
+	public void crearCuentaAhorros(){
+
+	}
+	public CuentaAhorros obtenerCuentaAhorros(CuentaAhorros ahorros){
+		CuentaAhorros cuentaAhorros = null;
+		cuentaAhorros = (CuentaAhorros) listaCuentas.stream().filter(c -> c.equals(ahorros));
+	}
+
+	public boolean
+}

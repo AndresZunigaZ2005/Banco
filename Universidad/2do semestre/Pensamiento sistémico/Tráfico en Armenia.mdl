@@ -1,0 +1,182 @@
+{UTF-8}
+Agentes de tránsito= ACTIVE INITIAL (
+	-Tasa de muertes por accidentes viales,
+		50)
+	~	
+	~		|
+
+Cogestión vehicular=
+	Vehiculos parqueados+Tasa de Accidentedalidad
+	~	
+	~		|
+
+Demanda de viajes=
+	Población/3
+	~	
+	~		|
+
+Nacimientos= INITIAL(
+	Población*Tasa de natalidad/1000)
+	~	
+	~		|
+
+Población= INTEG (
+	Población+Nacimientos*Tasa de muertes por accidentes viales/1000,
+		500000)
+	~	
+	~		|
+
+Vehiculos parqueados=
+	Volumen de tráfico-Agentes de tránsito
+	~	
+	~		|
+
+Volumen de tráfico=
+	Demanda de viajes-Tasa de muertes por accidentes viales+Tiempo de viaje+Transporte informal\
+		+Transporte público
+	~	
+	~		|
+
+Tasa de natalidad = WITH LOOKUP (
+	Time,
+		([(0,0)-(10,10)],(2000,7),(2010,8),(2022,8.5),(2030,10) ))
+	~	
+	~		|
+
+Transporte informal=
+	Demanda de viajes+Transporte público/2-Agentes de tránsito*2
+	~	
+	~		|
+
+Transporte público=
+	Demanda de viajes/2
+	~	
+	~		|
+
+Tasa de Accidentedalidad=
+	Volumen de tráfico/1000
+	~	
+	~		|
+
+Tasa de muertes por accidentes viales=
+	Tasa de Accidentedalidad
+	~	
+	~		|
+
+Tiempo de viaje=
+	Cogestión vehicular
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 24
+	~	Hour
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Hour
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Hour [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Hour [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,90,0
+10,1,Población,391,354,44,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Demanda de viajes,423,241,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Volumen de tráfico,691,159,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Tasa de Accidentedalidad,962,102,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Cogestión vehicular,918,244,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,Tiempo de viaje,862,365,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,1,2,1,0,0,0,0,192,0,-1--1--1,,1|(392,314)|
+1,8,2,3,1,0,0,0,0,192,0,-1--1--1,,1|(517,158)|
+1,9,3,4,1,0,0,0,0,192,0,-1--1--1,,1|(830,164)|
+1,10,4,5,1,0,0,0,0,192,0,-1--1--1,,1|(960,190)|
+1,11,5,6,1,0,0,0,0,192,0,-1--1--1,,1|(920,307)|
+1,12,6,3,1,0,0,0,0,192,0,-1--1--1,,1|(760,304)|
+10,13,Transporte informal,554,345,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,2,13,1,0,0,0,0,192,0,-1--1--1,,1|(502,273)|
+1,15,13,3,1,0,0,0,0,192,0,-1--1--1,,1|(642,272)|
+10,16,Tasa de muertes por accidentes viales,364,97,43,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,17,4,16,1,0,0,0,0,192,0,-1--1--1,,1|(691,24)|
+1,18,16,3,1,0,0,0,0,192,0,-1--1--1,,1|(539,79)|
+10,19,Transporte público,560,224,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,20,2,19,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,21,19,3,1,0,0,0,0,192,0,-1--1--1,,1|(609,182)|
+1,22,16,1,1,0,0,0,0,192,0,-1--1--1,,1|(271,238)|
+1,23,19,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,24,Vehiculos parqueados,685,348,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,25,24,5,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,26,3,24,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,27,Agentes de tránsito,209,217,49,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,28,16,27,1,0,0,0,0,192,0,-1--1--1,,1|(243,105)|
+1,29,27,13,1,0,0,0,0,192,0,-1--1--1,,1|(344,393)|
+1,30,27,24,1,0,0,0,0,192,0,-1--1--1,,1|(356,447)|
+12,31,48,540,407,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,32,34,31,100,0,0,22,0,192,0,-1--1--1,,1|(509,407)|
+1,33,34,1,4,0,0,22,0,192,0,-1--1--1,,1|(391,407)|
+11,34,0,483,407,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,35,Nacimientos,483,438,53,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,36,1,35,1,0,0,0,0,192,1,-1--1--1,,1|(466,381)|
+10,37,Tasa de natalidad,652,454,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,38,37,35,1,0,0,0,0,192,1,-1--1--1,,1|(570,482)|
+10,39,Time,753,445,31,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,40,39,37,1,0,0,0,0,192,0,-1--1--1,,1|(716,472)|
+///---\\\
+:L<%^E!@
+1:Trafico en Armenia.vdfx
+4:Time
+5:Time
+9:Trafico en Armenia
+19:90,0
+24:0
+25:24
+26:24
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:5
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

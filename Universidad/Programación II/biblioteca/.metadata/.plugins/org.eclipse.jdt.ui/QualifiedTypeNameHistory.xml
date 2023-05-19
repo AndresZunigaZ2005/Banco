@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="co.edu.uniquindio.biblioteca.model.Libro"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="co.edu.uniquindio.biblioteca.model.DetalllePrestamo"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="co.edu.uniquindio.biblioteca.model.Estudiante"/>
+</qualifiedTypeNameHistroy>

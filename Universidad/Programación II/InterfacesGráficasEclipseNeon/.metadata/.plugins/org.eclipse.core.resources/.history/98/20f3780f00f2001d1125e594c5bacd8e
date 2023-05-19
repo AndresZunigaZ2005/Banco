@@ -1,0 +1,81 @@
+package co.edu.uniquindio.pr2.model;
+
+import java.util.*;
+
+public class EmpresaEnergia {
+
+	private List<Factura> listaFacturas;
+	private List<Cliente> listaClientes;
+
+	public EmpresaEnergia() {
+		// TODO Auto-generated constructor stub
+	}
+	public EmpresaEnergia(List<Factura> listaFacturas, List<Cliente> listaClientes) {
+		super();
+		this.listaFacturas = listaFacturas;
+		this.listaClientes = listaClientes;
+	}
+	public List<Factura> getListaFacturas() {
+		return listaFacturas;
+	}
+
+	public void setListaFacturas(List<Factura> listaFacturas) {
+		this.listaFacturas = listaFacturas;
+	}
+
+	public List<Cliente> getListaClientes() {
+		return listaClientes;
+	}
+
+	public void setListaClientes(List<Cliente> listaClientes) {
+		this.listaClientes = listaClientes;
+	}
+	@Override
+	public String toString() {
+		return "EmpresaEnergia [listaFacturas=" + listaFacturas + ", listaClientes=" + listaClientes + "]";
+	}
+
+	/*
+	 * Metodos CRUD ClienteNatural
+	 */
+	public void aniadirClienteNatural(Cliente nuevoCliente){
+		if(!verificarClienteNatural(nuevoCliente)){
+			listaClientes.add(nuevoCliente);
+		}
+	}
+
+	public Cliente obtenerClienteNatural(Cliente clienteObtener){
+		Cliente obtenerCliente = null;
+		obtenerCliente = (Cliente) listaClientes.stream().filter(c -> c.obtenerClienteNatural(clienteObtener));
+		return obtenerCliente;
+	}
+
+	public boolean verificarClienteNatural(Cliente cliente){
+		return listaClientes.stream().anyMatch(c -> c.verificarClienteNatural(cliente));
+	}
+
+	/**
+	 * Metodos CRUD ClienteJuridico
+	 */
+
+
+	/**
+	 * Metodos CRUD Factura
+	 */
+	public void crearFactura(Factura nuevaFactura){
+		if(!verificarFactura(nuevaFactura)){
+			listaFacturas.add(nuevaFactura);
+		}
+	}
+
+	public Factura obtenerFactura(Factura facturaObtener){
+		if(verificarFactura(facturaObtener)){
+			return (Factura)listaFacturas.stream().filter(f -> f.equals(facturaObtener));
+		}
+		return null;
+	}
+
+	public boolean verificarFactura(Factura verificarFactura){
+		return listaFacturas.stream().anyMatch(f -> f.equals(verificarFactura));
+	}
+}

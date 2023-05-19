@@ -1,0 +1,98 @@
+package co.edu.uniquindio.bank.controllers;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+
+import java.util.Observable;
+import java.util.Optional;
+
+import application.Main;
+import co.edu.uniquindio.bank.model.CuentaAhorros;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableView;
+
+public class CuentaAhorrosController {
+
+	ModelController modelController = ModelController.getInstance();
+
+	ObservableList <CuentaAhorros> listaCuentaAhorros = FXCollections.observable
+	@FXML
+	private PasswordField txtSaldo;
+	@FXML
+	private PasswordField txtTasaAnual;
+	@FXML
+	private Button btnCrearCuenta;
+	@FXML
+	private Button btnBorrarDatos;
+    @FXML
+    private TableView<?> tablaContenido;
+	// Event Listener on Button[#btnCrearCuenta].onAction
+	@FXML
+	public void CrearCuenta(ActionEvent event) {
+		crearCuenta();
+	}
+	// Event Listener on Button[#btnBorrarDatos].onAction
+	@FXML
+	public void eliminarDatos(ActionEvent event) {
+		borrarDatosFields();
+	}
+
+	private void crearCuenta() {
+		double saldo = Double.parseDouble(txtSaldo.getText());
+		double tasaAnual = Double.parseDouble(txtTasaAnual.getText());
+		boolean verificarDatos = verificarIngresoDatos(saldo, tasaAnual);
+		if(verificarDatos) {
+			CuentaAhorros cuentaAhorros = new CuentaAhorros(saldo, tasaAnual, false);
+
+		}
+	}
+	private boolean verificarIngresoDatos(double saldo, double tasaAnual) {
+		if(saldo==0 && tasaAnual==0){
+			mostrarMensaje("Datos erroneos", "Datos inválido", "Vuelva a ingresar los datos", AlertType.ERROR);
+			return false;
+		}else {
+			return true;
+		}
+	}
+
+	private void borrarDatosFields() {
+		txtSaldo.setText("");
+		txtTasaAnual.setText("");
+	}
+
+	private boolean mostrarMensajeConfirmacion(String mensaje) {
+
+	   	Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    	alert.setTitle("Confirmación");
+    	alert.setHeaderText(null);
+    	alert.setContentText(mensaje);
+
+    	Optional<ButtonType> action = alert.showAndWait();
+
+    	if(action.get() == ButtonType.OK){
+    		return true;
+    	}else{
+    		return false;
+    	}
+	}
+    public void mostrarMensaje(String titulo, String header, String contenido, AlertType alertType) {
+
+    	Alert alert = new Alert(alertType);
+    	alert.setTitle(titulo);
+    	alert.setHeaderText(header);
+    	alert.setContentText(contenido);
+    	alert.showAndWait();
+	}
+	public void setApplication(Main main) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package co.edu.uniquindio.biblioteca.views;
+
+import co.edu.uniquindio.biblioteca.model.Biblioteca;
+import co.edu.uniquindio.biblioteca.model.Estudiante;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		String nombre = "Juan";
+		String apellidos = "arias muñoz";
+		
+		Biblioteca biblioteca = new Biblioteca("Mi biblioteca","calle 12","1234567");
+		biblioteca.crearEstudiante(nombre, apellidos, 20, "sistemas", "activo", "12345");
+		
+		
+		biblioteca.crearEstudiante(nombre, apellidos, 20, "sistemas", "activo", "12345");
+
+		biblioteca.crearEstudiante(nombre, apellidos, 20, "sistemas", "activo", "12345");
+
+		biblioteca.crearEstudiante(nombre, apellidos, 20, "sistemas", "activo", "12345");
+
+		biblioteca.crearEstudiante(nombre, apellidos, 20, "sistemas", "activo", "12345");
+
+		
+
+	}
+
+}

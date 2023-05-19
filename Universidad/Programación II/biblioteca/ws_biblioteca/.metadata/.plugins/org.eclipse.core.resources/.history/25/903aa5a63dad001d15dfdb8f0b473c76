@@ -1,0 +1,14 @@
+package co.edu.uniquindio.biblioteca.views;
+
+import co.edu.uniquindio.biblioteca.model.Estudiante;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Estudiante estudiante1 = new Estudiante("Juan", "arias muñoz", 20, "sistemas", "activo", "12345");
+		System.out.println();
+
+	}
+
+}

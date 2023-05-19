@@ -1,0 +1,11 @@
+package co.edu.uniquindio.pr2.controller;
+
+import co.edu.uniquindio.pr2.model.EmpresaEnergia;
+
+public class ModelFactoryController {
+
+
+	public initialize(){
+		EmpresaEnergia.getInstance();
+	}
+}

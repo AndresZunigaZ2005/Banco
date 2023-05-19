@@ -1,0 +1,68 @@
+package EjerciciosClase;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+
+public class RegistroEtudiantes extends JFrame {
+
+	private JPanel showPaneRegister;
+	private JTextField textMail;
+	private JTextField textPassword;
+	private JTextField textConfirmPass;
+	
+	public static void main(String[]args) {
+		RegistroEtudiantes registroEtudiantes = new RegistroEtudiantes();
+		registroEtudiantes.setVisible(true);
+	}
+
+	public RegistroEtudiantes() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 600, 450);
+		showPaneRegister = new JPanel();
+		showPaneRegister.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(showPaneRegister);
+		setResizable(false);
+		getContentPane().setLayout(null);
+		setLocationRelativeTo(null);
+		constructor();
+	}
+	
+	public void constructor() {
+		JLabel lblNewLabel = new JLabel("Correo electrónico");
+		lblNewLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblNewLabel.setBounds(50, 79, 159, 58);
+		showPaneRegister.add(lblNewLabel);
+		
+		JLabel lblContrasea = new JLabel("Contraseña");
+		lblContrasea.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblContrasea.setBounds(50, 159, 159, 58);
+		showPaneRegister.add(lblContrasea);
+		
+		JLabel lblConfirmarContrasea = new JLabel("Confirmar contraseña");
+		lblConfirmarContrasea.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblConfirmarContrasea.setBounds(50, 247, 174, 58);
+		showPaneRegister.add(lblConfirmarContrasea);
+		
+		textMail = new JTextField();
+		textMail.setBounds(234, 91, 269, 39);
+		showPaneRegister.add(textMail);
+		textMail.setColumns(10);
+		
+		textPassword = new JTextField();
+		textPassword.setColumns(10);
+		textPassword.setBounds(234, 171, 269, 39);
+		showPaneRegister.add(textPassword);
+		
+		textConfirmPass = new JTextField();
+		textConfirmPass.setColumns(10);
+		textConfirmPass.setBounds(234, 259, 269, 39);
+		showPaneRegister.add(textConfirmPass);
+	}
+}

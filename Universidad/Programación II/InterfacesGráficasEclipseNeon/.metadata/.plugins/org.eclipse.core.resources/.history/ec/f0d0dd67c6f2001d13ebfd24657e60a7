@@ -1,0 +1,9 @@
+package co.edu.uniquindio.pr2.controller;
+
+public class ModelFactoryController {
+
+	
+	public initialize(){
+		
+	}
+}

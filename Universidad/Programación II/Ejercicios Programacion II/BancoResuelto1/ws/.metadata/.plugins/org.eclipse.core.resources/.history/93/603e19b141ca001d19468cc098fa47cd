@@ -1,0 +1,5 @@
+package co.uniquindio.banco.exceptions;
+
+public class CuentaException {
+
+}

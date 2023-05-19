@@ -1,0 +1,14 @@
+package co.edu.uniquindio.bank.exception;
+
+import java.io.IOException;
+
+public class CuentaException extends Exception{
+
+	public CuentaException() {
+
+	}
+
+	public CuentaException(String msj){
+		super("Error"+msj);
+	}
+}

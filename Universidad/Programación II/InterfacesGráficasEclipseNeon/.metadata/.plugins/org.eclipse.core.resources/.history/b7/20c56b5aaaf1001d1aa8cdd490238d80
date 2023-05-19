@@ -1,0 +1,53 @@
+package co.edu.uniquindio.pr2.model;
+
+import java.util.*;
+
+public class EmpresaEnergia {
+
+	private List<Factura> listaFacturas;
+	private List<Cliente> listaClientes;
+
+	public EmpresaEnergia() {
+		// TODO Auto-generated constructor stub
+	}
+	public EmpresaEnergia(List<Factura> listaFacturas, List<Cliente> listaClientes) {
+		super();
+		this.listaFacturas = listaFacturas;
+		this.listaClientes = listaClientes;
+	}
+	public List<Factura> getListaFacturas() {
+		return listaFacturas;
+	}
+
+	public void setListaFacturas(List<Factura> listaFacturas) {
+		this.listaFacturas = listaFacturas;
+	}
+
+	public List<Cliente> getListaClientes() {
+		return listaClientes;
+	}
+
+	public void setListaClientes(List<Cliente> listaClientes) {
+		this.listaClientes = listaClientes;
+	}
+	@Override
+	public String toString() {
+		return "EmpresaEnergia [listaFacturas=" + listaFacturas + ", listaClientes=" + listaClientes + "]";
+	}
+
+	/*
+	 * Metodos CRUD Cliente
+	 */
+	public Cliente aniadirCliente(Cliente nuevoCliente){
+
+	}
+
+	public Cliente obtenerCliente(Cliente clienteObtener){
+		Cliente obtenerCliente = null;
+		//listaClientes.stream().findAny(c ->);
+	}
+
+	public boolean verificarCliente(Cliente cliente){
+		Cliente
+	}
+}
