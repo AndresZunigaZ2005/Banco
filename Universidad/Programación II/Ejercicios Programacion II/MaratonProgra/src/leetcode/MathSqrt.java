@@ -1,8 +1,0 @@
-package leetcode;
-
-public class MathSqrt {
-	
-	public int mySqrt(int x) {
-		return (int) Math.sqrt(x);
-	}
-}

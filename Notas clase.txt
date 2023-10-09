@@ -5,10 +5,63 @@ El cliente no necesita saber como se hacen los procesos, solo necesitan resultad
 Token agenda
 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
 
+Token banco
+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
+
 Registro de vehiculos, para venta o alquiler 
 Registro de clientes
 Registro de transacciones(Clase), atributos: Un cliente, Venta alquiler o compra.
 registro empleados
 base de datos: empleados, clientes, concecionario, vehiculo
 poner stock
-yo soy cliente del proveedor, cliente conectado con la transaccion 
+yo soy cliente del proveedor, cliente conectado con la transaccion
+
+Relindo
+Oblicuo
+Bello
+Ingenioso
+Notable
+Seguro
+Optimista
+Navegante
+
+//asunto
+Recuperar Contraseña
+
+                	+ "<h2>Estimado Usuario,</h2>"
+//introduccion cuerpo   + "<p>Hemos recibido una solicitud de recuperaci&oacuten de contrase&ntildea para su cuenta en LGZ Concessionaire. "
+                        + "Para asegurarnos de que sea usted quien realiza esta solicitud, hemos generado un c&oacutedigo de verificaci&oacuten &uacutenico.</p>"
+                        + "<p>Por favor, utilice el siguiente c&oacutedigo de verificaci&oacuten para restablecer su contrase&ntildea:</p>"
+                        + "<p><strong>C&oacutedigo de verificaci&oacuten:</strong> " (//Introduccion cuerpo) + generarContenidoHTML(codigo) + "</p>"
+//final cuerpo          + "<p>Le recomendamos que copie y pegue el c&oacutedigo de verificaci&oacuten en el formulario de recuperaci&oacuten de contrase&ntildea "
+                        + "para evitar errores de escritura.</p>" 
+                        + "<p>Si usted no solicit&oacute esta recuperaci&oacuten de contrase&ntildea, puede ignorar este correo electr&oacutenico. No se realizar&aacuten cambios en su cuenta.</p>"
+                        + "<p>Por motivos de seguridad, le sugerimos que una vez que haya restablecido su contrase&ntildea, la modifique por una nueva y segura.</p>" 
+			//final cuerpo
+                        + "<p>Si necesita asistencia adicional o tiene alguna pregunta, no dude en contactarnos a trav&eacutes de LGZConcessionaire@hotmail.com</p>"
+                        + "<p>Atentamente,</p>"
+                        + "<p>Equipo Londo&ntildeo, Garc&iacutea, Z&uacute&ntildeiga</p>"
+                        + "<p>LGZConcessionaire</p>"; 
+
+//asunto
+Auntenticación Registro
+
+			+ "<h2>Estimado Usuario,</h2>"
+//introduccion cuerpo   + "<p>Gracias por registrarte en nuestro sitio web. Estamos encantados de tenerte como parte de nuestra comunidad.  "
+                        + "Para asegurarnos de que sea usted quien realiza esta solicitud, hemos generado un c&oacutedigo de verificaci&oacuten &uacutenico.</p>"
+                        + "<p>Por favor, utilice el siguiente c&oacutedigo de verificaci&oacuten para restablecer su contrase&ntildea:</p>"
+                        + "<p><strong>C&oacutedigo de verificaci&oacuten:</strong> " + generarContenidoHTML(codigo) + "</p>"
+//final cuerpo          + "<p>Le recomendamos que copie y pegue el c&oacutedigo de verificaci&oacuten en el formulario de registro "
+                        + "para evitar errores de escritura.</p>" 
+                        + "<p>Si usted no solicit&oacute este c&oacutedigo de autenticaci&oacuten, puede ignorar este correo electr&oacutenico.</p>"
+                        //final cuerpo
+                        + "<p>Si necesita asistencia adicional o tiene alguna pregunta, no dude en contactarnos a trav&eacutes de LGZConcessionaire@hotmail.com</p>"
+                        + "<p>Atentamente,</p>"
+                        + "<p>Equipo Londo&ntildeo, Garc&iacutea, Z&uacute&ntildeiga</p>"
+                        + "<p>LGZConcessionaire</p>"; 
+
+token clinica veterinaria: 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
+taller3008: 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
+
+azul pastel:  #0598ff
+

@@ -1,8 +1,0 @@
-package co.edu.uniquindio.pr2.model;
-
-public class ClienteJuridico {
-
-	private String nit;
-	private String telefono;
-	private String tipoEmpresa;
-}

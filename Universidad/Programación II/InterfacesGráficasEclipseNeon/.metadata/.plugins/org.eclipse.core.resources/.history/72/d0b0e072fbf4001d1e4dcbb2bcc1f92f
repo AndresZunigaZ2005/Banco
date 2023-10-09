@@ -1,5 +1,0 @@
-package co.edu.uniquindio.bank.exception;
-
-public class CuentaException {
-
-}

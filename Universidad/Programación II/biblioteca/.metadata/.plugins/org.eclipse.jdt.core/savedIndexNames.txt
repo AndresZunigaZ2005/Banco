@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+C:\Users\ANDRE\Desktop\Universidad\Programación II\biblioteca\.metadata\.plugins\org.eclipse.jdt.core
-3978777189.index
-143947086.index
-1323144508.index
-2807545597.index
-1865797976.index
